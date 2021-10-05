@@ -49,7 +49,6 @@ export default function App(): JSX.Element {
 
   const endDrawing = () => {
     if (isDrawing) {
-      console.log(historyIndex)
       dispatch(endStroke({
         historyLimit: historyIndex,
         stroke: currentStroke,
